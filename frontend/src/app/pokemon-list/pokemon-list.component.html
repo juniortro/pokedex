@@ -1,0 +1,21 @@
+<h1>Pokédex</h1>
+
+<div class="search-container">
+    <input #searchInput type="text" placeholder="Search Pokémon" (input)="search(searchInput)">
+</div>
+
+<div class="grid-container">
+    <div *ngFor="let pokemon of pokemons" class="card" (click)="openPokemonDialog(pokemon)">
+        <div class="card-img">
+            <img [src]="getPokemonImageUrl(pokemon.id)" alt="{{ pokemon.name }}" class="pokemon-image">
+        </div>
+        <div class="card-name">
+            {{ pokemon.name }}
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <button (click)="previousPage()">Previous</button>
+    <button (click)="nextPage()">Next</button>
+</div>

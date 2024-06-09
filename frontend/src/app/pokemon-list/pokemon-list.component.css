@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.pokemon-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+}
+
+.card-img {
+    text-align: center;
+}
+
+.card-img img {
+    max-width: 90%;
+    height: 150px;
+}
+
+.card-name {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.grid-container {
+    width: 70%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}

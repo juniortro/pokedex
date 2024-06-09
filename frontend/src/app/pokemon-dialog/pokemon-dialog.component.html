@@ -1,0 +1,15 @@
+<div class="content">
+    <h2>{{ data.pokemon.name | titlecase }}</h2>
+    <img [src]="getPokemonImageUrl(data.pokemon.id)" alt="{{ data.pokemon.name }}" class="pokemon-image">
+    <div class="pokemon-details">
+      <p><strong>Height:</strong> {{ data.pokemonDetail.height / 10 }} m</p>
+      <p><strong>Weight:</strong> {{ data.pokemonDetail.weight / 10 }} kg</p>
+      <div class="pokemon-types">
+        <p><strong>Types:</strong></p>
+        <div class="types">
+          <span *ngFor="let type of data.pokemonDetail.types" class="type">{{ type.type.name }}</span>
+        </div>
+      </div>
+    </div>
+    <button mat-button (click)="onClose()">Close</button>
+</div>
